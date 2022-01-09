@@ -164,7 +164,7 @@ ion-icon {
 }
 
 .main {
-    width: 85%;
+    width: 100%;
 }
 
 .ad > img {
@@ -349,8 +349,45 @@ li {
         width: 80%;
     }
 
+    .menu {
+        width: 20px;
+    }
+
+    .main {
+        max-height: 200px;
+        
+    }
+
+    .submenu {
+        flex-direction: column;
+        font-size: 50%;
+        margin-bottom: 50%;
+        text-align: left;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .submenu > ion-icon {
+        padding: 0;
+        /* margin-left: 25%; */
+        /* margin-bottom: 20%; */
+        font-size: 100%;
+    }
+
+    .submenu > i {
+        padding: 0;
+        /* margin-left: 25%; */
+        /* margin-bottom: 20%; */
+        font-size: 100%
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
     .logo > ion-icon {
         font-size: 100%;
+        padding-bottom: 1px;
     }
 
     .logo > img {
@@ -359,6 +396,7 @@ li {
 
     .search {
         width: 50%;
+        margin-top: 1px;
     }
 
     .search > div {
@@ -371,7 +409,7 @@ li {
         height: 30%;
     }
     ion-icon {
-        font-size: 100%;
+        font-size: 5px;
     }
     .signin {
         display: flex;
@@ -382,6 +420,10 @@ li {
         width: 10px;
         cursor: pointer;
         color: #065fd4;
+    }
+
+    .sign-btn {
+        display: inline-block;
     }
     
     .signin > ion-icon {
@@ -398,7 +440,17 @@ li {
     }
 
     .sections {
-        font-size: 5px;
+        font-size: 8px;
+    }
+
+    .sections:nth-of-type(8) {
+        display: none;
+    }
+    .sections:nth-of-type(9) {
+        display: none;
+    }
+    .sections:nth-of-type(10) {
+        display: none;
     }
 
     .mic {
@@ -417,15 +469,59 @@ li {
         display: flex;
         margin-top: 2px;
         margin-right: 2px;
+        position: relative;
+        max-height: 20px;
     }
     
     .options > ion-icon {
         margin-top: 1px;
     }
+
+    .videos {
+        font-size: 15px;
+        padding-left: 1px;
+    }
+
+    /* .videos:nth-of-type(2) {
+        flex-basis: 150px;
+    } */
+
+    .video-image {
+        width: 100%;
+    }
+
+    .video-image > img {
+        width: 100%;
+    
+    }
+
+    .video-desc {
+        width: 100%;
+        font-size: 5px;
+    }
+
+    .desc, .channel {
+        font-size: 10px;
+    }
+
+    .desc1, li {
+        font-size: 8px;
+    }
     
     .apps {
         margin-right: 2px;
         margin-top: 1px;
+        width: 20px;
+        height: 15px;
     }
 
+    .opt {
+        width: 20px;
+        height: 15px;
+    }
+
+    .contents {
+        flex-wrap:wrap;
+        height: 800px
+    }
 }
